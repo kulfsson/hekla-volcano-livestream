@@ -1,0 +1,35 @@
+{
+  "hero": {
+    "eyebrow": "Southern Iceland · 63°59′ N, 19°40′ W",
+    "title": "Hekla, on the horizon.",
+    "intro": "A quiet view toward one of Iceland’s most storied volcanoes—shared from Úlfagreni, with room for a future live camera when the mountain has something to say."
+  },
+  "camera": {
+    "heading": "The view from Úlfagreni",
+    "title": "Footage coming soon",
+    "description": "Recorded views from the cabin will appear here. A future live broadcast can be embedded in this space without changing the rest of the site."
+  },
+  "facts": [
+    { "value": "1,491 m", "label": "elevation" },
+    { "value": "23", "label": "historical eruptions" },
+    { "value": "2000", "label": "last eruption" },
+    { "value": "South", "label": "of Iceland" }
+  ],
+  "history": {
+    "heading": "Hekla’s recorded story",
+    "intro": "Hekla is a ridge-shaped volcano with a fissure along its summit. Its eruptions have varied enormously—some began explosively, others produced long lava flows. Written records reach back to 1104, while layers in Icelandic soil preserve a much older story."
+  },
+  "eras": [
+    { "period": "Before settlement", "title": "Layers in the earth", "description": "Large prehistoric eruptions left the Hekla-5, Hekla-4 and Hekla-3 tephra layers—time markers found far beyond the mountain." },
+    { "period": "1104–1846", "title": "Accounts and ash", "description": "The first recorded eruption in 1104 began a long written chronology of explosive openings, lava flows and difficult years for nearby farms." },
+    { "period": "1947–today", "title": "The monitored volcano", "description": "Six modern eruption episodes transformed what scientists know about Hekla and how quickly its warning signs may appear." }
+  ],
+  "field_notes_heading": "A few things worth knowing",
+  "field_notes": [
+    { "number": "01", "title": "Not one simple cone", "description": "Hekla combines features of a central volcano and an eruptive fissure. The summit fissure is called Heklugjá." },
+    { "number": "02", "title": "A remarkable record", "description": "The Icelandic Meteorological Office describes Hekla as Iceland’s third most active volcanic system in historical time." },
+    { "number": "03", "title": "Watch the experts", "description": "Activity is assessed by scientists using seismic, deformation, and other data. Conditions can change quickly; official notices matter." }
+  ],
+  "official_heading": "Use official sources for activity and travel decisions.",
+  "footer_text": "A personal project about the view toward Hekla from Úlfagreni."
+}

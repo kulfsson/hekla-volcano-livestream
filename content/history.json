@@ -1,0 +1,46 @@
+{
+  "hero": {
+    "eyebrow": "Eruption history · Hekla volcanic system",
+    "title": "Nine centuries written in ash.",
+    "intro": "Hekla’s slopes hold lava from many eruptions. Its ash layers reach much farther: across Iceland, into Europe and back through time. This chronology separates well-documented eruptions of Hekla’s central volcano from smaller or uncertain events attributed to the wider system."
+  },
+  "prehistory": {
+    "heading": "The ground kept the first history.",
+    "paragraph_one": "Long before Iceland was settled, Hekla produced major explosive eruptions. Their pale tephra layers—commonly called Hekla-5, Hekla-4 and Hekla-3—became distinctive chronological markers in soils, wetlands and archaeological records.",
+    "paragraph_two": "The character of activity has changed through time. According to the Icelandic Meteorological Office, the period 7,000–3,000 years ago featured infrequent but very large silicic eruptions; the last 3,000 years brought more frequent, generally smaller mixed explosive and effusive events."
+  },
+  "chronology": {
+    "heading": "1104–2000",
+    "intro": "Eighteen central-volcano eruption episodes are listed here, following the overview used by Icelandic volcanological sources. VEI describes explosive magnitude; it does not measure every hazard or the total amount of lava."
+  },
+  "events": [
+    { "date": "1104", "vei": "VEI 5", "title": "The first recorded eruption", "description": "A major explosive eruption deposited the H1 tephra layer and devastated farms around the volcano. It remains the largest explosive event in Hekla’s written history." },
+    { "date": "1158", "vei": "VEI 4", "title": "Return after five decades", "description": "An explosive and effusive eruption left tephra and lava, beginning a cluster of medieval activity." },
+    { "date": "1206", "vei": "VEI 3", "title": "Winter eruption", "description": "The eruption began in December and produced both tephra and lava." },
+    { "date": "1222", "vei": "VEI 2", "title": "A short repose", "description": "About fifteen years after the 1206 event ended, Hekla erupted again—one of the shortest early intervals in the record." },
+    { "date": "1300–01", "vei": "VEI 4", "title": "A powerful medieval event", "description": "A large explosive and effusive eruption spread tephra and produced lava flows." },
+    { "date": "1341", "vei": "VEI 3", "title": "Tephra, lava and livestock losses", "description": "Historical accounts describe damage to grazing land and livestock, a recurring consequence of fluorine-rich Hekla ash." },
+    { "date": "1389–90", "vei": "VEI 3", "title": "Lava reshapes the summit", "description": "Another mixed eruption produced lava and tephra from the volcanic ridge." },
+    { "date": "1510", "vei": "VEI 4", "title": "An explosive opening", "description": "A forceful eruption dispersed tephra widely before continuing with lava production." },
+    { "date": "1597", "vei": "VEI 4", "title": "Activity returns", "description": "The volcano erupted after roughly 86 years of quiet, again combining explosive activity with lava." },
+    { "date": "1636–37", "vei": "VEI 3", "title": "Months of activity", "description": "This eruption extended into the following year and added new lava to Hekla’s flanks." },
+    { "date": "1693", "vei": "VEI 4", "title": "Ash hazardous to farms", "description": "A substantial explosive eruption spread fluorine-rich tephra, damaging pastures and livestock." },
+    { "date": "1766–68", "vei": "VEI 4", "title": "Nearly two years", "description": "One of Hekla’s longest historical eruptions began violently, then continued with intermittent lava production." },
+    { "date": "1845–46", "vei": "VEI 4", "title": "The last eruption of the 19th century", "description": "After almost eight decades of quiet, an explosive opening gave way to months of lava effusion." },
+    { "date": "1947–48", "vei": "VEI 4", "title": "The great modern eruption", "description": "A large plume rose into the stratosphere at the start of an eruption that continued for more than a year." },
+    { "date": "1970", "vei": "VEI 3", "title": "Several fissures open", "description": "Activity began on 5 May. Lava flows formed rapidly from fissures on and around the ridge." },
+    { "date": "1980–81", "vei": "VEI 3 / 2", "title": "Two closely spaced episodes", "description": "A short eruption in August 1980 was followed by renewed activity in April 1981; they are often treated as one eruptive period." },
+    { "date": "1991", "vei": "VEI 3", "title": "A monitored eruption", "description": "Seismicity and strain changes gave a short warning before the eruption began on 17 January." },
+    { "date": "2000", "vei": "VEI 3", "title": "The most recent eruption", "description": "After rapid precursory signals, the eruption began on 26 February. A high plume formed first, followed by lava flows from the fissure." }
+  ],
+  "count_note": {
+    "heading": "Eighteen—or twenty-three?",
+    "paragraph_one": "The Icelandic Meteorological Office says the Hekla volcanic system has erupted 23 times in historical time. The central-volcano overview above contains 18 principal episodes.",
+    "paragraph_two": "Longer chronologies also include eruptions or reports associated with the surrounding system—often dated 1440, 1554, 1725, 1878 and 1913. Their precise source, status or relationship to Hekla differs among catalogues. Keeping them visible but separate avoids presenting an uncertain historical record as more exact than it is."
+  },
+  "monitoring": {
+    "heading": "History is context, not a clock.",
+    "body": "Past intervals do not produce an eruption timetable. Hekla has sometimes shown only tens of minutes of detectable unrest before erupting, so present-day decisions should come from official monitoring—not from averages or the date of the last event."
+  },
+  "footer_text": "A personal project about the view toward Hekla from Úlfagreni."
+}

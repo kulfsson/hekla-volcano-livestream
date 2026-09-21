@@ -1,0 +1,137 @@
+media:
+  input: dist/media
+  output: /media
+  rename: safe
+  extensions: [jpg, jpeg, png, webp, avif, svg]
+
+content:
+  - name: homepage
+    label: Homepage
+    type: file
+    path: content/home.json
+    format: json
+    fields:
+      - name: hero
+        label: Opening section
+        type: object
+        fields:
+          - { name: eyebrow, label: Small heading, type: string, required: true }
+          - { name: title, label: Main heading, type: string, required: true }
+          - { name: intro, label: Introduction, type: text, required: true }
+      - name: camera
+        label: Camera section
+        type: object
+        fields:
+          - { name: heading, label: Section heading, type: string, required: true }
+          - { name: title, label: Camera status title, type: string, required: true }
+          - { name: description, label: Camera description, type: text, required: true }
+      - name: facts
+        label: Facts strip
+        type: object
+        list:
+          min: 1
+          max: 4
+          collapsible:
+            collapsed: true
+            summary: "{value} — {label}"
+        fields:
+          - { name: value, label: Value, type: string, required: true }
+          - { name: label, label: Label, type: string, required: true }
+      - name: history
+        label: History preview
+        type: object
+        fields:
+          - { name: heading, label: Heading, type: string, required: true }
+          - { name: intro, label: Introduction, type: text, required: true }
+      - name: eras
+        label: History eras
+        type: object
+        list:
+          min: 1
+          max: 3
+          collapsible:
+            collapsed: true
+            summary: "{period} — {title}"
+        fields:
+          - { name: period, label: Period, type: string, required: true }
+          - { name: title, label: Title, type: string, required: true }
+          - { name: description, label: Description, type: text, required: true }
+      - { name: field_notes_heading, label: Field notes heading, type: string, required: true }
+      - name: field_notes
+        label: Field notes
+        type: object
+        list:
+          min: 1
+          max: 3
+          collapsible:
+            collapsed: true
+            summary: "{number} — {title}"
+        fields:
+          - { name: number, label: Number, type: string, required: true }
+          - { name: title, label: Title, type: string, required: true }
+          - { name: description, label: Description, type: text, required: true }
+      - { name: official_heading, label: Official-sources heading, type: string, required: true }
+      - { name: footer_text, label: Footer description, type: text, required: true }
+
+  - name: history
+    label: History page
+    type: file
+    path: content/history.json
+    format: json
+    fields:
+      - name: hero
+        label: Opening section
+        type: object
+        fields:
+          - { name: eyebrow, label: Small heading, type: string, required: true }
+          - { name: title, label: Main heading, type: string, required: true }
+          - { name: intro, label: Introduction, type: text, required: true }
+      - name: prehistory
+        label: Before written records
+        type: object
+        fields:
+          - { name: heading, label: Heading, type: string, required: true }
+          - { name: paragraph_one, label: First paragraph, type: text, required: true }
+          - { name: paragraph_two, label: Second paragraph, type: text, required: true }
+      - name: chronology
+        label: Chronology introduction
+        type: object
+        fields:
+          - { name: heading, label: Date range, type: string, required: true }
+          - { name: intro, label: Introduction, type: text, required: true }
+      - name: events
+        label: Eruptions
+        type: object
+        list:
+          min: 1
+          collapsible:
+            collapsed: true
+            summary: "{date} — {title}"
+        fields:
+          - { name: date, label: Date, type: string, required: true }
+          - { name: vei, label: VEI, type: string, required: true }
+          - { name: title, label: Title, type: string, required: true }
+          - { name: description, label: Description, type: text, required: true }
+      - name: count_note
+        label: Eruption-count explanation
+        type: object
+        fields:
+          - { name: heading, label: Heading, type: string, required: true }
+          - { name: paragraph_one, label: First paragraph, type: text, required: true }
+          - { name: paragraph_two, label: Second paragraph, type: text, required: true }
+      - name: monitoring
+        label: Monitoring section
+        type: object
+        fields:
+          - { name: heading, label: Heading, type: string, required: true }
+          - { name: body, label: Paragraph, type: text, required: true }
+      - { name: footer_text, label: Footer description, type: text, required: true }
+
+settings:
+  content:
+    merge: true
+  commit:
+    identity: user
+    templates:
+      update: "Edit {name}: {path}"
+

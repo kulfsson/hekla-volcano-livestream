@@ -1,0 +1,54 @@
+name: Build and deploy to SiteGround
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: siteground-production
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      DEPLOY_HOST: ${{ secrets.SITEGROUND_HOST }}
+      DEPLOY_USER: ${{ secrets.SITEGROUND_USER }}
+      DEPLOY_PORT: ${{ secrets.SITEGROUND_PORT }}
+      DEPLOY_PATH: ${{ secrets.SITEGROUND_PATH }}
+      DEPLOY_KNOWN_HOSTS: ${{ secrets.SITEGROUND_KNOWN_HOSTS }}
+      DEPLOY_SSH_KEY: ${{ secrets.SITEGROUND_SSH_KEY }}
+    steps:
+      - name: Check out the site
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Build static pages
+        run: npm run build
+
+      - name: Check deployment settings
+        run: |
+          test -n "$DEPLOY_HOST"
+          test -n "$DEPLOY_USER"
+          test -n "$DEPLOY_PORT"
+          test -n "$DEPLOY_PATH"
+          test -n "$DEPLOY_KNOWN_HOSTS"
+          test -n "$DEPLOY_SSH_KEY"
+
+      - name: Configure secure SiteGround connection
+        run: |
+          install -d -m 700 ~/.ssh
+          printf '%s\n' "$DEPLOY_SSH_KEY" > ~/.ssh/siteground_key
+          chmod 600 ~/.ssh/siteground_key
+          printf '%s\n' "$DEPLOY_KNOWN_HOSTS" > ~/.ssh/known_hosts
+
+      - name: Upload the static site
+        run: scp -i ~/.ssh/siteground_key -P "$DEPLOY_PORT" -r dist/. "$DEPLOY_USER@$DEPLOY_HOST:$DEPLOY_PATH/"
